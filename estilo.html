@@ -7,10 +7,12 @@
     <title>Examen</title>
 
     <style>
+        /*Para acceder a las clases uso el '.' */
         .bloque{
             color:aqua;
             font-size: 20px;
         }
+        /*Para acceder al atributo id uso # */
         #bloque1{
             background-color: green;
         }
@@ -20,6 +22,7 @@
         #bloque3{
             background-color: blue;
         }
+        /*Para acceder a las etiquetas uso su nombre */
         body{
             background-color: black;
         }
@@ -32,7 +35,7 @@
     </style>
 </head>
 <body>
-     <div id="bloque1" class="bloque" onclick="alert('Soy bloque 1')">
+     <div id="bloque1" class="bloque" onclick="func_bloque('bloque1')">
             <p>Esto es el bloque 1</p>
      </div>
 
@@ -43,6 +46,12 @@
      <div id="bloque3" class="bloque" onclick="alert('Soy bloque 3')">
             <p>Esto es el bloque 3</p>
      </div>
+
+     <script>
+         function func_bloque(nombre_id){
+            alert(nombre_id)
+         }
+     </script>
      
 </body>
 </html>
